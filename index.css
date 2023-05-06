@@ -1,11 +1,136 @@
 /* css file */
 
+/* 
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+
+### Neutral
+
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+- Font size: 16px
+- Family: []()
+- Weights: 300, 400, 600
+*/
+/* entire body design section */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.google.com/specimen/Josefin+Sans');
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  padding: 40px 0;
+  margin: auto;
+  width: 375px;
+  height: 100vh;
+  background-color: #0A1124;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+/* main component design section */
+.main{
+  margin: auto;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 20px;
+  background-color: hsl(0, 37%, 96%);
+}
+
+/* logo design section*/
+.logo{
+  transform: scale(0.5);
+  position: relative;
+  top: 10px;
+  right: 74%;
+}
+
+/*text design section */
+.word{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.text h1{
+  font-weight: 300;
+  text-align: center;
+  font-size: 50px;
+  transform: scale(0.6);
+  position: relative;
+  bottom: 18%;
+}
+
+.text h1 span{
+  color: hsl(0, 36%, 70%);
+}
+
+.text p{
+  color: hsl(0, 36%, 70%);
+  text-align: center;
+  position: relative;
+  bottom: 27%;
+  font-size: 10px;
+  padding: 0 50px;
+  line-height: 20px;
+}
+
+/* email input field */
+.input{
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid hsl(0, 36%, 70%);
+  position: relative;
+  bottom: 16%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-left: 15px;
+}
+
+/* icons design section */
+.hidden {
+  display: none;
+}
+
+.arrow{
+  /* width: 30px;
+  height: 40px; */
+  background: linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)) ;
+}
+
+/* creator and coder design section */
   .attribution {
     font-size: 11px; 
     text-align: center; 
 }
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(0, 36%, 70%);
     text-decoration: none;
     font-size: 15px; 
+}
+
+.attribution span{
+  color: hsl(0, 37%, 96%);
 }
